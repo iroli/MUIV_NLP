@@ -18,3 +18,15 @@ https://drive.google.com/file/d/1Bx9NjPK4NOzCry61SIItAk_F-iFr35pt/view?usp=shari
 
 пример
 https://drive.google.com/file/d/1enoncjaxiBb9xlIUs1sjr-z9T4QW_Clx/view?usp=sharing
+
+---------------------------------------------------
+from google.colab import drive
+import os
+
+TRAIN_FILE = '/content/drive/MyDrive/CL/datasets/pushkin.txt'
+
+drive.mount('/content/drive')
+
+if os.path.exists(TRAIN_FILE):
+    print("YES")
+------------------------------------------------------
